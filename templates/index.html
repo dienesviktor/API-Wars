@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% include "navigation.html" %}
+    {% include "vote-stat.html" %}
+
+    <section id="planet-data">
+        <section id="modals"></section>
+        <h1>Star Wars Universe Planets</h1>
+        <button id="previous" class="btn btn-primary">Previous</button>
+        <button id="next" class="btn btn-primary">Next</button>
+        <div class="table-responsive table-bordered table-striped">
+            <table class="table">
+                <div id="loading"></div>
+                <thead class="thead" id="table-head"></thead>
+                <tbody id="table-data"></tbody>
+            </table>
+        </div>
+    </section>
+{% endblock %}
